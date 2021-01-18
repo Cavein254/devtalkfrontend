@@ -21,20 +21,25 @@ const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
+  const style = { maxWidth: "24px" };
 
   return (
     <div className={styles.top}>
       <Navbar light expand="md">
         <NavbarBrand>
           <div>
-            <span className={styles.logo}>
+            <span>
               <img
                 alt="..."
-                className=" img-fluid rounded shadow"
+                className=" img-fluid rounded shadow responsive"
                 src={Logo}
+                className={styles.logo}
+                // style={style}
               ></img>
             </span>
-            <span className={styles.logo_title}>DevTalk</span>
+            <span className={styles.logo_title_dev}>DEV</span>
+            <span className={styles.logo_title_talk}>Talk</span>
+            <span className={styles.logo_title_kenya}>kenya</span>
           </div>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />

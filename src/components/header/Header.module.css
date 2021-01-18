@@ -1,14 +1,27 @@
+li {
+  list-style: none;
+}
+
 .top {
   background: #0f0f0f;
   color: #ffff;
 }
 .logo {
-  color: white;
-  width: 12px;
-  height: 12px;
+  max-width: 24px;
+  padding-top: 0;
 }
-.logo_title {
+.logo_title_dev {
   color: red;
   padding-left: 10px;
   font-weight: 700;
+}
+.logo_title_talk {
+  font-weight: 100;
+  color: white;
+}
+.logo_title_kenya {
+  font-weight: 100;
+  font-size: 1rem;
+  padding-left: 0.4rem;
+  color: green;
 }
