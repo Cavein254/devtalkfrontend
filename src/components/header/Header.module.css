@@ -1,0 +1,14 @@
+.top {
+  background: #0f0f0f;
+  color: #ffff;
+}
+.logo {
+  color: white;
+  width: 12px;
+  height: 12px;
+}
+.logo_title {
+  color: red;
+  padding-left: 10px;
+  font-weight: 700;
+}
