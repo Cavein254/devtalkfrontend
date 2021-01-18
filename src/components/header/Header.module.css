@@ -4,7 +4,6 @@ li {
 
 .top {
   background: #0f0f0f;
-  color: #ffff;
 }
 .logo {
   max-width: 2rem;
@@ -13,6 +12,7 @@ li {
 .logo_title_dev {
   color: red;
   font-weight: 700;
+  margin-left: 1.2rem;
 }
 .logo_title_talk {
   font-weight: 100;
@@ -24,13 +24,34 @@ li {
   padding-left: 0.4rem;
   color: green;
 }
-.signin_btn {
+.register_btn {
   background-color: #1b5e20;
-  font-size: small;
+  font-size: x-small;
+  margin-right: 1.2rem;
 }
 .signup_btn {
   margin-right: 1.2rem;
+  font-size: x-small;
+  color: white;
 }
 .signin_btn:hover {
   background-color: #f9a825;
+}
+.nav_btn {
+  background-color: transparent;
+  border: none;
+}
+.nav_btn:hover {
+  background-color: transparent;
+  border-radius: 0.5rem solid white;
+}
+.nav_dropdown {
+  background-color: #0f0f0f;
+}
+.nav_dropdown_items {
+  color: #fff;
+  font-size: x-small;
+  margin: 0;
+  padding: 0;
+  padding-left: 0.5rem;
 }

@@ -6,23 +6,26 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   Button,
   DropdownItem,
-  NavbarText,
+  ButtonDropdown,
 } from "reactstrap";
-import { BoxArrowInRight, PencilSquare } from "react-bootstrap-icons";
+import {
+  BoxArrowInRight,
+  PencilSquare,
+  ThreeDotsVertical,
+} from "react-bootstrap-icons";
 import Logo from "../../assets/logo.png";
 import styles from "./Header.module.css";
 
-const Header = (props) => {
+const Header = () => {
+  const [isOpenDropdown, setIsOpenDropdown] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-  const style = { maxWidth: "24px" };
+  const toggleDropdown = () => setIsOpenDropdown(!isOpenDropdown);
 
   return (
     <div className={styles.top}>
@@ -43,22 +46,47 @@ const Header = (props) => {
             <span className={styles.logo_title_kenya}>kenya</span>
           </div>
         </NavbarBrand>
+
         <NavbarToggler onClick={toggle} />
-        <Collapse style={{ color: "#fff" }} isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem></NavItem>
-          </Nav>
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar></Nav>
+
           <NavItem>
-            <span style={{ color: "#fff" }} className={styles.signup_btn}>
+            <span className={styles.signup_btn}>
               <PencilSquare color="white" size={20} /> Sign up
             </span>
           </NavItem>
           <NavItem>
-            <Button className={styles.signin_btn}>
-              <span style={{ color: "#fff" }}>
+            <Button className={styles.register_btn}>
+              <span>
                 <BoxArrowInRight color="white" size={20} /> Sign In
               </span>
             </Button>
+          </NavItem>
+          <NavItem>
+            <ButtonDropdown
+              direction="down"
+              isOpen={isOpenDropdown}
+              onClick={toggleDropdown}
+            >
+              <DropdownToggle className={styles.nav_btn}>
+                <ThreeDotsVertical />
+              </DropdownToggle>
+              <DropdownMenu className={styles.nav_dropdown}>
+                <DropdownItem className={styles.nav_dropdown_items}>
+                  Action
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem className={styles.nav_dropdown_items}>
+                  Action
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem className={styles.nav_dropdown_items}>
+                  Another
+                </DropdownItem>
+                <DropdownItem divider />
+              </DropdownMenu>
+            </ButtonDropdown>
           </NavItem>
         </Collapse>
       </Navbar>
