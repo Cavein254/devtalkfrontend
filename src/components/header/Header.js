@@ -10,10 +10,11 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
+  Button,
   DropdownItem,
   NavbarText,
 } from "reactstrap";
-import { ArrowRight, BoxArrowInRight } from "react-bootstrap-icons";
+import { BoxArrowInRight, PencilSquare } from "react-bootstrap-icons";
 import Logo from "../../assets/logo.png";
 import styles from "./Header.module.css";
 
@@ -31,12 +32,12 @@ const Header = (props) => {
             <span>
               <img
                 alt="..."
-                className=" img-fluid rounded shadow responsive"
+                className="img-fluid rounded shadow responsive"
                 src={Logo}
                 className={styles.logo}
-                // style={style}
               ></img>
             </span>
+
             <span className={styles.logo_title_dev}>DEV</span>
             <span className={styles.logo_title_talk}>Talk</span>
             <span className={styles.logo_title_kenya}>kenya</span>
@@ -48,9 +49,16 @@ const Header = (props) => {
             <NavItem></NavItem>
           </Nav>
           <NavItem>
-            <span style={{ color: "#fff" }}>
-              <BoxArrowInRight color="white" size={20} /> Sign In
+            <span style={{ color: "#fff" }} className={styles.signup_btn}>
+              <PencilSquare color="white" size={20} /> Sign up
             </span>
+          </NavItem>
+          <NavItem>
+            <Button className={styles.signin_btn}>
+              <span style={{ color: "#fff" }}>
+                <BoxArrowInRight color="white" size={20} /> Sign In
+              </span>
+            </Button>
           </NavItem>
         </Collapse>
       </Navbar>

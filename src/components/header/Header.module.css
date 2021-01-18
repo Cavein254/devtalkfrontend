@@ -7,12 +7,11 @@ li {
   color: #ffff;
 }
 .logo {
-  max-width: 24px;
-  padding-top: 0;
+  max-width: 2rem;
 }
+
 .logo_title_dev {
   color: red;
-  padding-left: 10px;
   font-weight: 700;
 }
 .logo_title_talk {
@@ -24,4 +23,14 @@ li {
   font-size: 1rem;
   padding-left: 0.4rem;
   color: green;
+}
+.signin_btn {
+  background-color: #1b5e20;
+  font-size: small;
+}
+.signup_btn {
+  margin-right: 1.2rem;
+}
+.signin_btn:hover {
+  background-color: #f9a825;
 }
