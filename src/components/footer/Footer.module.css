@@ -1,0 +1,23 @@
+.footer_questions {
+  background-color: #000;
+  color: #fff;
+}
+.footer_line {
+  border-left: 12px solid white;
+  height: 100%;
+}
+.footer_learning {
+  background-color: red;
+}
+.footer_misc {
+  background-color: green;
+}
+.footer_close {
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.footer_text {
+  font-size: larger;
+}
