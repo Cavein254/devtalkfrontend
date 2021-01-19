@@ -48,11 +48,6 @@ const Hero = () => {
       <Row style={{ marginBottom: "3rem" }}>
         <Col xs="12" md="6">
           <img src={Success} flex style={{ width: "95%" }} />
-          <small>
-            <a href="https://www.daxx.com/blog/development-trends/number-software-developers-world">
-              daxx
-            </a>
-          </small>
         </Col>
         <Col className={style.hero_mid_text}>
           <Card>
