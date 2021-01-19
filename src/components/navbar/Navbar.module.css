@@ -1,0 +1,12 @@
+.nav_bar {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.nav_bar_inner {
+  padding: 0 1.2rem;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}

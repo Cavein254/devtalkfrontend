@@ -74,15 +74,15 @@ const Header = () => {
               </DropdownToggle>
               <DropdownMenu className={styles.nav_dropdown}>
                 <DropdownItem className={styles.nav_dropdown_items}>
-                  Action
+                  About Us
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem className={styles.nav_dropdown_items}>
-                  Action
+                  Privacy Policy
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem className={styles.nav_dropdown_items}>
-                  Another
+                  Other
                 </DropdownItem>
                 <DropdownItem divider />
               </DropdownMenu>
