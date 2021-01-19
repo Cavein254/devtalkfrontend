@@ -9,8 +9,14 @@
   padding-left: 4rem;
 }
 .hero_quote {
-  padding: 3rem;
+  padding: 2rem 5rem;
+  margin: 2rem 3rem;
   text-align: center;
+  background-color: blanchedalmond;
+}
+.hero_card {
+  background-color: blanchedalmond;
+  margin-right: 2rem;
 }
 
 /* This file should be included at the bottom 
@@ -18,7 +24,7 @@ so as not to be overidden */
 
 @media (min-width: 375px) and (max-width: 812px) {
   .hero_img {
-    margin-top: -5rem;
+    margin-top: -1rem;
     margin-left: 1rem;
     width: 40rem;
   }

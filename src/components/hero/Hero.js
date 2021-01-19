@@ -29,10 +29,10 @@ const Hero = () => {
       </Row>
       <Row>
         <div className={style.hero_quote}>
-          <h2>
+          <h4>
             Improve your Creative Skills by Helping Others and Receiving Help In
             Return
-          </h2>
+          </h4>
           <blockquote class="blockquote text-center">
             <p class="mb-0">
               “I like video games, but they're really violent. I'd like to play
@@ -50,12 +50,9 @@ const Hero = () => {
           <img src={Success} flex style={{ width: "95%" }} />
         </Col>
         <Col>
-          <Card>
+          <Card className={style.hero_card}>
             <CardBody>
               <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
               <CardText>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
