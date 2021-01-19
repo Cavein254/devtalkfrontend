@@ -1,0 +1,33 @@
+.hero_text {
+  text-align: center;
+  padding-top: 10%;
+  font-weight: 100;
+  font-size: 0.5rem;
+}
+.hero_img {
+  margin-top: -10rem;
+  padding-left: 4rem;
+}
+.hero_quote {
+  padding: 3rem;
+  text-align: center;
+}
+.hero_mid_text {
+  padding: 5%;
+  margin: 2%;
+  box-shadow: 5px 5px grey;
+}
+/* This file should be included at the bottom 
+so as not to be overidden */
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .hero_img {
+    margin-top: -5rem;
+    margin-left: 1rem;
+    width: 40rem;
+  }
+  .hero_text {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
