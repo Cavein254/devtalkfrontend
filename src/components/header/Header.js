@@ -57,7 +57,7 @@ const Header = () => {
             </span>
           </NavItem>
           <NavItem>
-            <Button className={styles.register_btn}>
+            <Button className={styles.signin_btn}>
               <span>
                 <BoxArrowInRight color="white" size={20} /> Sign In
               </span>
