@@ -12,11 +12,7 @@
   padding: 3rem;
   text-align: center;
 }
-.hero_mid_text {
-  padding: 5%;
-  margin: 2%;
-  box-shadow: 5px 5px grey;
-}
+
 /* This file should be included at the bottom 
 so as not to be overidden */
 

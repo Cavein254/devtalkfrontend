@@ -49,7 +49,7 @@ const Hero = () => {
         <Col xs="12" md="6">
           <img src={Success} flex style={{ width: "95%" }} />
         </Col>
-        <Col className={style.hero_mid_text}>
+        <Col>
           <Card>
             <CardBody>
               <CardTitle tag="h5">Card title</CardTitle>
