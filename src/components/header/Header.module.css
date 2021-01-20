@@ -25,9 +25,9 @@ li {
   color: green;
 }
 .signin_btn {
-  background-color: #1b5e20;
-  font-size: x-small;
   margin-right: 1.2rem;
+  font-size: x-small;
+  color: white;
 }
 .signup_btn {
   margin-right: 1.2rem;
@@ -37,12 +37,13 @@ li {
 .signin_btn:hover {
   background-color: #f9a825;
 }
+/* used important as the default button  values refused to be overiden */
 .nav_btn {
-  background-color: transparent;
-  border: none;
+  background-color: transparent !important;
+  border: none !important;
 }
 .nav_btn:hover {
-  background-color: transparent;
+  background-color: transparent !important;
   border-radius: 0.5rem solid white;
 }
 .nav_dropdown {
