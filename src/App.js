@@ -5,17 +5,19 @@ import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
 import Resources from "./components/resources/Resources";
 import Question from "./components/question/Question";
+import Login from "./components/auth/Login";
 
 export default function App() {
   return (
     <div>
-      <Header />
-      <NavBar />
+      {/* <Header /> */}
+      {/* <NavBar /> */}
       {/* <Hero /> */}
       {/* <Resources /> */}
       {/* <Footer /> */}
-      <Question />
-      <Question />
+      {/* <Question /> */}
+      {/* <Question /> */}
+      <Login />
     </div>
   );
 }
