@@ -7,29 +7,29 @@ const Question = () => {
   return (
     <div className={styles.question_cover}>
       <Row>
-        <Col xs="12" md="8">
+        <Col xs="12">
           <Row>
-            <Col xs="4" className={styles.question_attr}>
-            <span><small><Badge color="info">Beginner</Badge></small></span>
+            <Col xs="4" md="2"className={styles.question_attr}>
                   <span>
-                      <BinocularsFill /> Views 10
+                      <BinocularsFill size={20}/> Views 10
                   </span>
+           
                   <span>
-                      <BoxArrowInUp /> Upvotes 12
+                      <BoxArrowInUp size={20}/> Upvotes 12
                   </span>
+    
                  <span>
-                     <Archive /> Answers 3
+                     <Archive size={20}/> Answers 3
                  </span>
                  <span>
-                     <ChatQuote /> Comments 7
+                     <ChatQuote size={20}/> Comments 7
                  </span>
-                  <span>
-                      <EmojiFrown /> status Closed
-                  </span>
+                  
             </Col>
             <Col className={styles.question_main_card}>
                 <div className={styles.question_main_title}>
-                <h4>Title</h4> <small>Posted 12hrs ago</small>
+                <h4 className={styles.question_title}>Title</h4> 
+                <small className={styles.question_posted}>Posted 12hrs ago</small>
                 </div>
                 <div className={styles.question_main}>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
@@ -40,12 +40,10 @@ const Question = () => {
                 </div>
                 <hr />
                 <div className={styles.question_footer_main}>
-                    <span>
-                        <small><ChatRightQuote /> Comment</small>
-                    </span>
-                    <span>
-                        <small><Star /> Like</small>
-                    </span>
+                <span><h6><Badge color="info">Beginner</Badge></h6></span>
+                <span>
+                      <EmojiFrown size={20}/> status closed
+                  </span>
                 </div>
             </Col>
           </Row>

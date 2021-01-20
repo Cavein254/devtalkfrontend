@@ -9,11 +9,12 @@ import Question from "./components/question/Question";
 export default function App() {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <NavBar />
-      <Hero />
-      <Resources />
-      <Footer /> */}
+      {/* <Hero /> */}
+      {/* <Resources /> */}
+      {/* <Footer /> */}
+      <Question />
       <Question />
     </div>
   );

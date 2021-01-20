@@ -1,11 +1,14 @@
 .question_cover {
-  margin: 0 1.2rem;
+  margin: 1rem 1.2rem;
+  /* border-radius: 0 0 25px 25px; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 .question_attr {
   display: flex;
   flex-direction: column;
   padding: 1.2rem;
+  background-color: #000;
+  color: #616161;
 }
 .question_attr > span {
   padding: 1rem 0 0 0.6rem;
@@ -14,8 +17,19 @@
 .question_footer_main {
   padding-bottom: 1rem;
   margin-top: 0;
+  background-color: #f9fbe7;
 }
 .question_footer_main {
   display: flex;
   justify-content: space-evenly;
+}
+.question_main_title {
+  background-color: #0f0f0f;
+}
+.question_title {
+  color: red;
+  padding-left: 1rem;
+}
+.question_posted {
+  color: #fff;
 }
