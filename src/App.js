@@ -6,6 +6,7 @@ import Hero from "./components/hero/Hero";
 import Resources from "./components/resources/Resources";
 import Question from "./components/question/Question";
 import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
 
 export default function App() {
   return (
@@ -17,7 +18,8 @@ export default function App() {
       {/* <Footer /> */}
       {/* <Question /> */}
       {/* <Question /> */}
-      <Login />
+      {/* <Login /> */}
+      <Register />
     </div>
   );
 }

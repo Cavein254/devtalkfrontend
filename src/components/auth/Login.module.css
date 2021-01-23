@@ -27,5 +27,19 @@
 }
 .auth_form {
   margin-top: 1.2rem;
-  border: 1px red solid;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.auth_form > input {
+  border-radius: 0;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+.auth_form > button {
+  border-radius: 0;
+  padding: 0 1.2rem;
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: #000;
+  border: #000;
 }
